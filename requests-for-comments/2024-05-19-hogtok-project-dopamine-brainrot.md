@@ -2,9 +2,11 @@
 
 ## TL;DR
 
-For hackathon, @andy @javier and I created a series of short, punchy TikTok- and Instagram story-style videos to help developers quickly discover and learn more about PostHog features. 
+For hackathon, @andyvan-ph @jabahamondes and I created a series of short, punchy TikTok- and Instagram story-style videos to help developers quickly discover and learn more about PostHog features. 
 
 We also built a video player UI that can be embedded within the PostHog app (us/eu.posthog.com) and the website (posthog.com/docs).
+
+@jabahamondes has a PR up [here](https://github.com/PostHog/posthog/pull/32226)
 
 ## What's the problem
 
@@ -23,20 +25,20 @@ We think developers, and people in general, enjoy watching short videos and will
 
 Well, it's the most consumed content format in the world for a reason – highly engaging, addicting, and flexible. Levarging short form video, we could increase PostHog feature awareness and engagement by meeting users where their attention span is. 
 
-@andy and I also agree that most technical videos made by dev fool companies that are longer than a few minutes tend to lose focus and often ramble. They're really hard to execute well, and most viewers tune out. These longer-form videos serve a different purpose – they're better suited for deep dives and implementation, not feature discovery.
+@andyvan-ph and I also agree that most technical videos made by dev fool companies that are longer than a few minutes tend to lose focus and often ramble. They're really hard to execute well, and most viewers tune out. These longer-form videos serve a different purpose – they're better suited for deep dives and implementation, not feature discovery.
 
 Maybe the biggest advantage of the 30-60s length format is how much faster and easier it is to make than traditional Youtube-style tutorials. I was able to create four HogTok videos in a single hackathon day.
 
 ## HogTok requirements
 
 Each HogTok video:
-- Has a light, somewhat humorous tone
+- Has a light, humorous tone with music
 - Is 9:16 vertical format
 - Is under 60 seconds (ideal target: 30 seconds)
 - Uses CapCut for editing
   - Can reuse their massive library of editing templates, auto captions, transitions, music, etc.
-- Uses Screen.studio for screen recording
-- Uses AI voiceover from [ElevenLabs](https://www.elevenlabs.io)
+- Uses screen.studio for screen recording
+- Uses RoboNilo AI voiceover from [ElevenLabs](https://www.elevenlabs.io) (I'm so sorry @daniloc)
 - Has a video thumbnail that grabs attention (e.g. bold text, faces, UI highlights)
 
 The HogTok video player:
@@ -51,6 +53,17 @@ The HogTok video player:
 
 ## Examples
 
+Videos:
+- [Changelog: Save filters for session replay](https://res.cloudinary.com/dmukukwp6/video/upload/changelog_save_filters_replay_1_9aabb9799c.mp4)
+- [Changelog: Linear share modal for session replay](https://res.cloudinary.com/dmukukwp6/video/upload/changelog_linear_share_1_11fdaee4cd.mp4)
+- [Toolbar overview](https://res.cloudinary.com/dmukukwp6/video/upload/toolbar_2_0a34e62550.mp4)
+- [Toolbar actions](https://res.cloudinary.com/dmukukwp6/video/upload/toolbar_actions_07e751a76a.mp4)
+
+Images: 
+- https://res.cloudinary.com/dmukukwp6/image/upload/toolbar_inspect_a43e85f7d3.png
+- https://res.cloudinary.com/dmukukwp6/image/upload/toolbar_heatmap_d68abfa438.png
+- https://res.cloudinary.com/dmukukwp6/image/upload/toolbar_feature_flags_6723eb2704.png
+- https://res.cloudinary.com/dmukukwp6/image/upload/toolbar_cool_features_f4e9a08d4c.png
 
 ## Reasons to do it
 - Helps developers discover and learn more about PostHog features
@@ -69,15 +82,15 @@ The HogTok video player:
 
 ## Open Questions
 - Is the short-form format only effective for UI-level or high-level product overviews? 
-- Can we meaningfully show and explain code in 30s-60s?
+    - Can we meaningfully show and explain code in 30s-60s?
 - Should the goal be conversion (i.e. getting users to sign up) or feature adoption (i.e. getting existing users to try new features)?
     - IMO we should focus on feature adoption / awareness
 - What other topics could HogTok videos be great for?
-    - "Behind-the-scenes" or "Founderfluence" videos (e.g., James sharing roadmap vision or industry commentary) 
+    - Behind-the-scenes or "Founderfluence" videos (e.g., James or Tim sharing roadmap vision)
     - Adapted customer stories
     - Community spotlights
 
 ## Proposed next steps
-- Ship hackathon MVP under feature flag (this week May 19-23) @javier
+- Ship hackathon MVP under feature flag (this week May 19-23) @jabahamondes
 - Create an overview HogTok video for each PostHog top-line product like error tracking, LLM observability, data warehouse, surveys etc. (next week May 26-30)
 - Create a few more feature tutorial Hogtok videos (?)
